@@ -3,10 +3,12 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     background-color: rgb(225, 122, 168);
     margin: 0;
     padding: 0 15px;
+    background-size: cover; /* Ensures the background fits the entire viewport */
+    background-position: center;
 }
 
 .header_text {
@@ -68,6 +70,7 @@ body {
     transition: background-color 0.3s ease;
     margin-top: 10px;
     margin-bottom: 10px;
+    width: 200px; /* Set button width */
     position: relative;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
