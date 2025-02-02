@@ -29,13 +29,13 @@ body {
 
 /* Yes Button */
 #yesButton {
-    padding: 15px 30px;
-    font-size: 18px;
+    padding: 20px 40px; /* Increased padding for bigger buttons */
+    font-size: 20px; /* Larger font size */
     font-family: 'Nunito', sans-serif;
     background-color: white;
     color: rgb(240, 6, 6);
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin-right: 40px; /* Creates space between Yes and No button */
@@ -57,13 +57,13 @@ body {
 
 /* No Button */
 #noButton {
-    padding: 15px 30px;
-    font-size: 18px;
+    padding: 20px 30px;
+    font-size: 20px;
     font-family: 'Nunito', sans-serif;
     background-color: rgb(201, 179, 179);
     color: black;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin-left: 30px; /* Pushes the No button further right */
@@ -99,8 +99,8 @@ body {
     }
 
     #yesButton, #noButton {
-        font-size: 14px; /* Reduced font size for mobile */
-        padding: 10px 20px; /* Reduced padding for better fit on smaller screens */
+        font-size: 18px; /* Reduced font size for mobile */
+        padding: 18px 36px; /* Reduced padding for better fit on smaller screens */
         margin-right: 5px; /* Reduced margins between buttons */
         margin-left: 5px;
     }
