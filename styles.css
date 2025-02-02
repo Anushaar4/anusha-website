@@ -40,6 +40,8 @@ body {
     border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    width: 200px; /* Set button width */
+    min-width: 200px; /* Ensures button doesn't shrink */
     margin-right: 40px; /* Creates space between Yes and No button */
     margin-top: 10px;
     margin-bottom: 10px;
@@ -71,6 +73,7 @@ body {
     margin-top: 10px;
     margin-bottom: 10px;
     width: 200px; /* Set button width */
+    min-width: 200px; /* Ensures button doesn't shrink */
     position: relative;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
