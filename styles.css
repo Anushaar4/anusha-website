@@ -1,0 +1,87 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(225, 122, 168);
+    margin: 0;
+}
+
+.header_text {
+    font-family: 'Nunito', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.button_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Yes Button */
+#yesButton {
+    padding: 15px 30px;
+    font-size: 18px;
+    font-family: 'Nunito', sans-serif;
+    background-color: white;
+    color: rgb(240, 6, 6);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 40px; /* Creates space between Yes and No button */
+}
+
+#yesButton:hover {
+    background-color: rgb(236, 239, 233);
+}
+
+#yesButton:active {
+    transform: scale(0.98);
+}
+
+#yesButton:focus {
+    outline: none;
+}
+
+/* No Button */
+#noButton {
+    padding: 15px 30px;
+    font-size: 18px;
+    font-family: 'Nunito', sans-serif;
+    background-color: rgb(201, 179, 179);
+    color: black;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 30px; /* Pushes the No button further right */
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#noButton:hover {
+    background-color: rgb(251, 241, 241);
+}
+
+#noButton:active {
+    transform: scale(0.98);
+}
+
+#noButton:focus {
+    outline: none;
+}
+
+.gif_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}

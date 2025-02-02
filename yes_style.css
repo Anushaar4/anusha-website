@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(189, 225, 122);
+}
+
+
+.header_text {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(246, 248, 242);
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.gif_container img {
+    width: 600px; 
+    align-items: center;
+    height: auto;
+    background-color: transparent; 
+    border-radius: 10px; 
+    display: block;
+}
