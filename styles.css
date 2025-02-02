@@ -3,12 +3,9 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    height: 100vh;
     background-color: rgb(225, 122, 168);
     margin: 0;
-    padding: 0 15px;
-    background-size: cover; /* Ensures the background fits the entire viewport */
-    background-position: center;
 }
 
 .header_text {
@@ -26,23 +23,24 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    flex-wrap: wrap;
+}
+
+/* Common Button Styles */
+.btn {
+    padding: 20px 40px; /* Increased padding for larger buttons */
+    font-size: 20px; /* Increased font size */
+    font-family: 'Nunito', sans-serif;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 20px; /* Controls spacing between buttons */
 }
 
 /* Yes Button */
 #yesButton {
-    padding: 20px 40px; /* Increased padding for bigger buttons */
-    font-size: 20px; /* Larger font size */
-    font-family: 'Nunito', sans-serif;
     background-color: white;
     color: rgb(240, 6, 6);
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-right: 40px; /* Creates space between Yes and No button */
-    margin-top: 10px;
-    margin-bottom: 10px;
 }
 
 #yesButton:hover {
@@ -58,68 +56,19 @@ body {
 }
 
 /* No Button */
-#noButton {
-    padding: 50px 70px;
-    font-size: 20px;
-    font-family: 'Nunito', sans-serif;
-    background-color: rgb(201, 179, 179);
+#myButton {
+    background-color: rgb(236, 239, 233);
     color: black;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 400px; /* Set button width */
-    min-width: 400px; /* Ensures button doesn't shrink */
-    position: relative;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-#noButton:hover {
+#myButton:hover {
     background-color: rgb(251, 241, 241);
 }
 
-#noButton:active {
+#myButton:active {
     transform: scale(0.98);
 }
 
-#noButton:focus {
+#myButton:focus {
     outline: none;
-}
-
-.gif_container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-}
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    .header_text {
-        font-size: 36px; /* Further reduce font size for tablet-sized screens */
-    }
-
-    #yesButton, #noButton {
-        font-size: 36px; /* Reduced font size for mobile */
-        padding: 36px 72px; /* Reduced padding for better fit on smaller screens */
-        margin-right: 5px; /* Reduced margins between buttons */
-        margin-left: 5px;
-    }
-}
-
-@media (max-width: 480px) {
-    .header_text {
-        font-size: 28px; /* Smaller font size for small mobile screens */
-    }
-
-    #yesButton, #noButton {
-        width: 100%; /* Make buttons full width for very small screens */
-        margin: 20px 0; /* Space between buttons vertically */
-    }
-
-    .gif_container {
-        margin-top: 15px; /* Reduced margin for smaller screens */
-    }
 }
