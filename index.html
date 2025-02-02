@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+        <link rel="stylesheet" href="./styles.css">
+     </head>
+<body>
+    <div class="container">
+
+    </div>
+    <div>
+    <h1 class = "header_text"> Hi, babyy!</h1>
+    <h1 class = "header_text"> Will you be my Valentine?</h1>
+</div>
+
+<div class ="gif_container">
+    <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDdtZ2JiZDR0a3lvMWF4OG8yc3p6Ymdvd3g2d245amdveDhyYmx6eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/cLS1cfxvGOPVpf9g3y/giphy.gif" alt="Cute animated illustration">
+</div>
+<div class = "buttons">
+    <button class="btn" id = "yesButton" onclick="nextPage()">Yes</button>
+    <button id="myButton" onclick="changeButtonText()">No</button>
+
+  <script>
+    let clickCount = 0;
+
+    function changeButtonText() {
+      clickCount++;
+
+      if (clickCount === 1) {
+        document.getElementById("myButton").innerText = "Are you sure?";
+      } else if (clickCount === 2) {
+        document.getElementById("myButton").innerText = "I'm asking again nicely!";
+      } else if (clickCount === 3) {
+        document.getElementById("myButton").innerText = "Oops! You have no other option.";
+    } else if (clickCount === 4) {
+        // Remove the button after the third click
+        document.getElementById("myButton").remove();
+      }
+    }
+  </script>
+
+    <script>
+        function nextPage() {
+            window.location.href = "yes.html";
+        }
+    </script>
+</div>
+</body>
+</body>
+</html>
