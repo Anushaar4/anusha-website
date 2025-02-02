@@ -6,6 +6,7 @@ body {
     height: 100vh;
     background-color: rgb(225, 122, 168);
     margin: 0;
+    padding: 0 15px;
 }
 
 .header_text {
@@ -23,6 +24,7 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+    flex-wrap: wrap;
 }
 
 /* Yes Button */
@@ -37,6 +39,8 @@ body {
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin-right: 40px; /* Creates space between Yes and No button */
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 #yesButton:hover {
@@ -63,6 +67,8 @@ body {
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin-left: 30px; /* Pushes the No button further right */
+    margin-top: 10px;
+    margin-bottom: 10px;
     position: relative;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -84,4 +90,33 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 30px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .header_text {
+        font-size: 36px; /* Further reduce font size for tablet-sized screens */
+    }
+
+    #yesButton, #noButton {
+        font-size: 14px; /* Reduced font size for mobile */
+        padding: 10px 20px; /* Reduced padding for better fit on smaller screens */
+        margin-right: 5px; /* Reduced margins between buttons */
+        margin-left: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header_text {
+        font-size: 28px; /* Smaller font size for small mobile screens */
+    }
+
+    #yesButton, #noButton {
+        width: 100%; /* Make buttons full width for very small screens */
+        margin: 5px 0; /* Space between buttons vertically */
+    }
+
+    .gif_container {
+        margin-top: 15px; /* Reduced margin for smaller screens */
+    }
 }
